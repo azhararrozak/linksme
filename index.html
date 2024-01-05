@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALL-Links</title>
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <script src="./src/js/main.js"></script>
+</head>
+
+<body onload="getQuote()">
+    <div class="container">
+        <div class="profile" id="profile">
+            <img src="./src/images/v4.png" alt="profile">
+            <h3 id="textTyping"></h3>
+            <p class="web-dev">Web Developer Enthusiast <i class="bi bi-globe"></i></p>
+        </div>
+
+        <div class="iconAll">
+            <a href="https://www.instagram.com/azhar_drozak/"><i class="bi bi-instagram"></i></a>
+            <a href="https://github.com/azhararrozak"><i class="bi bi-github"></i></a>
+            <a href="https://www.linkedin.com/in/azharrozak/"><i class="bi bi-linkedin"></i></a>
+            <a href="https://www.youtube.com/channel/UCZY0i8VX15IhajHdq9DcsoA"><i class="bi bi-youtube"></i></i></a>
+        </div>
+
+        <div class="link">
+            <a class="button-1" href="https://www.detailmycv.me/">
+                <p>My Portofolio CV <i class="bi bi-file-earmark-person-fill"></i></p>
+            </a>
+            <a class="button-2" href="https://inspiration-corner.my.id">
+                <p>Blogger Simple <i class="bi bi-pencil-fill"></i></p>
+            </a>
+            <a class="button-3" href="https://certificate-list.netlify.app/">
+                <p>Certificate List <i class="bi bi-arrow-right-square-fill"></i></p>
+            </a>
+            <a class="button-4" href="https://jokes-today.netlify.app/">
+                <p>Jokes Today <i class="bi bi-emoji-smile-fill"></i></p>
+            </a>
+            <a class="button-5" href="https://www.youtube.com/channel/UCZY0i8VX15IhajHdq9DcsoA">
+                <p>Youtube Channel <i class="bi bi-youtube"></i></p>
+            </a>
+        </div>
+
+        <div class="footer">
+            <p>Copyright@2023 Azhar Arrozak</p>
+        </div>
+        <script>
+            let string = "Azhar Arrozak";
+            let array = string.split("");
+            let timer;
+            let nameElement = document.getElementById("textTyping");
+
+            function frameLooper() {
+                if (array.length > 0) {
+                    nameElement.innerHTML += array.shift();
+                } else {
+                    clearTimeout(timer);
+                }
+                loopTimer = setTimeout('frameLooper()', 200);
+
+            }
+            frameLooper();
+        </script>
+    </div>
+</body>
+
+</html>

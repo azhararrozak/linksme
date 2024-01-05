@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --bg: #FFDC25;
+    --text: #0C0C22;
+    --button-1: #F15A5D;
+    --button-2: #42C1D5;
+    --button-3: #E08EFF;
+    --button-4: #FDB444;
+    --button-5: #77E379;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bg);
+    font-family: 'Oswald', sans-serif;
+}
+
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.profile>img {
+    width: 80px;
+    border: 2px solid var(--text);
+    border-radius: 100%;
+    margin-bottom: 10px;
+}
+
+.web-dev {
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 200;
+}
+
+.profile>p>i {
+    margin-left: 5px;
+}
+
+.quote {
+    text-align: center;
+    margin: 10px 50px;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.iconAll {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    width: 230px;
+}
+
+.iconAll>a>i {
+    font-size: 25px;
+    color: var(--text);
+}
+
+.link {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.link>a>p {
+    color: var(--text);
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.link>a {
+    text-decoration: none;
+    margin-bottom: 20px;
+    border: 2px solid var(--text);
+    box-shadow: 5px 5px var(--text);
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.button-1 {
+    background-color: var(--button-1);
+}
+
+.button-2 {
+    background-color: var(--button-2);
+}
+
+.button-3 {
+    background-color: var(--button-3);
+}
+
+.button-4 {
+    background-color: var(--button-4);
+}
+
+.button-5 {
+    background-color: var(--button-5);
+}
+
+.footer {
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer>p {
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 300;
+}
