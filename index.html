@@ -14,7 +14,7 @@
 <body onload="getQuote()">
     <div class="container">
         <div class="profile" id="profile">
-            <img src="./src/images/v4.png" alt="profile">
+            <img src="./src/images/azhar.png" alt="profile">
             <h3 id="textTyping"></h3>
             <p class="web-dev">Web Developer Enthusiast <i class="bi bi-globe"></i></p>
         </div>
@@ -27,10 +27,10 @@
         </div>
 
         <div class="link">
-            <a class="button-1" href="https://www.detailmycv.me/">
+            <a class="button-1" href="https://cv.azhararrozak.my.id/">
                 <p>My Portofolio CV <i class="bi bi-file-earmark-person-fill"></i></p>
             </a>
-            <a class="button-2" href="https://inspiration-corner.my.id">
+            <a class="button-2" href="https://blog.azhararrozak.my.id">
                 <p>Blogger Simple <i class="bi bi-pencil-fill"></i></p>
             </a>
             <a class="button-3" href="https://certificate-list.netlify.app/">
@@ -45,7 +45,7 @@
         </div>
 
         <div class="footer">
-            <p>Copyright@2023 Azhar Arrozak</p>
+            <p>Copyright &copy; <span id="year"></span> - Azhar Arrozak</p>
         </div>
         <script>
             let string = "Azhar Arrozak";
@@ -63,6 +63,8 @@
 
             }
             frameLooper();
+
+            document.getElementById("year").textContent = new Date().getFullYear();
         </script>
     </div>
 </body>
